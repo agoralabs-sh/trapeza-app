@@ -1,0 +1,26 @@
+name: trapeza_app
+description: "Trapeza - you make the rules."
+publish_to: "none"
+version: 1.0.0+1
+environment:
+  sdk: ">=3.9.0 <4.0.0" # dart minimum version
+  flutter: ">=3.38.0 <4.0.0" # flutter minimum version
+
+dependencies:
+  cupertino_icons: ^1.0.8
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  fonts:
+    - family: "Nunito"
+      fonts:
+        - asset: "assets/fonts/Nunito/Nunito-Regular.ttf"
+        - asset: "assets/fonts/Nunito/Nunito-Bold.ttf"
+          weight: 700
+  uses-material-design: true
