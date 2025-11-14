@@ -78,17 +78,24 @@ Coming soon...
 ### 3.1. Requirements
 
 * [Flutter SDK v3.22.3][flutter]
+* [Make (optional)](https://www.gnu.org/software/make/)
 
 <sup>[Back to top ^][table-of-contents]</sup>
 
 ### 3.2. Install Dependencies
 
-1. Simply run:
+Simply run:
 ```bash
 $ flutter pub get
 ```
 
 > ⚠️ **NOTE:** This will install the required dependencies and generate the development keys that can be used for signing the development version of the app.
+
+Alternatively, if Make is installed, simply run:
+
+```shell
+make install
+```
 
 <sup>[Back to top ^][table-of-contents]</sup>
 
@@ -265,6 +272,7 @@ Coming soon...
 | `flutter run`                        | Runs the app locally.                                                                                                                                                                                     |
 | `bundle exec fastlane <lane>`        | Uploads a mobile artifact to the Play Store/AppStore based on the lane, where `lane` is either `beta` or `production`.                                                                                    |
 | `dart run flutter_launcher_icons`    | Creates the launcher and store icons for all the apps (Android is excluded).                                                                                                                              |
+| `dart run husky install`             | Initializes `husky`'s git hooks.                                                                                                                                                                          |
 
 See the [Flutter CLI](https://docs.flutter.dev/reference/flutter-cli#flutter-commands) reference for a full list of available commands.
 
