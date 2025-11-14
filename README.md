@@ -59,7 +59,7 @@
       - [5.4.2. iOS](#542-ios)
 * [6. Appendix](#-6-appendix)
   - [6.1. Useful commands](#61-useful-commands)
-  - [6.2.Create an upload keystore](#62-create-an-upload-keystore)
+  - [6.2. Create an apk signing keystore](#62-create-an-apk-signing-keystore)
 * [7. How to contribute](#-7-how-to-contribute)
 * [8. License](#-8-license)
 
@@ -278,7 +278,7 @@ See the [Flutter CLI](https://docs.flutter.dev/reference/flutter-cli#flutter-com
 
 <sup>[Back to top ^][table-of-contents]</sup>
 
-### 6.2. Create An Upload Keystore
+### 6.2. Create an apk signing keystore
 
 The command below can be used to generate a keystore used for app signing:
 
@@ -286,7 +286,7 @@ The command below can be used to generate a keystore used for app signing:
 keytool -genkeypair \
   -v \
   -validity 10000 \
-  -keystore upload_keystore.jks \
+  -keystore signing_keystore.jks \
   -keyalg RSA \
   -keysize 2048 \
   -keypass <key_password> \
@@ -294,6 +294,8 @@ keytool -genkeypair \
   -storepass <keystore_password> \
   -storetype JKS
 ```
+
+> 💡 **TIP:** You can encode the keystore in base64 using: `base64 -w 0 signing_keystore.jks > signing_keystore-base64.txt`.
 
 <sup>[Back to top ^][table-of-contents]</sup>
 
@@ -318,4 +320,3 @@ Please refer to the [LICENSE][license] file.
 [license]: https://github.com/kibis-is/trapeza-mobile-app/blob/main/LICENSE
 [ruby]: https://www.ruby-lang.org/en/documentation/installation/
 [table-of-contents]: #table-of-contents
-

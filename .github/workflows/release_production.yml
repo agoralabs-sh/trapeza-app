@@ -17,4 +17,4 @@ jobs:
     with:
       environment: "production"
     secrets:
-      READ_AND_WRITE_REPOS_TOKEN: ${{ secrets.READ_AND_WRITE_REPOS_TOKEN }}
+      WRITE_REPOS_TOKEN: ${{ secrets.WRITE_REPOS_TOKEN }}

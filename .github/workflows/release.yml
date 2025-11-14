@@ -7,7 +7,7 @@ on:
         required: true
         type: string
     secrets:
-      READ_AND_WRITE_REPOS_TOKEN:
+      WRITE_REPOS_TOKEN:
         required: true
 
 jobs:
@@ -35,10 +35,10 @@ jobs:
       - name: "🔖 Release"
         env:
           # appears on the release commits
-          GIT_AUTHOR_NAME: kieranroneill
-          GIT_AUTHOR_EMAIL: hello@kieranoneill.com
-          GIT_COMMITTER_NAME: kieranroneill
-          GIT_COMMITTER_EMAIL: hello@kieranoneill.com
+          GIT_AUTHOR_NAME: agoralabs-bot
+          GIT_AUTHOR_EMAIL: tech@agoralabs.sh
+          GIT_COMMITTER_NAME: agoralabs-bot
+          GIT_COMMITTER_EMAIL: tech@agoralabs.sh
           # used to push the release commit and create the tags
-          GITHUB_TOKEN: ${{ secrets.READ_AND_WRITE_REPOS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.WRITE_REPOS_TOKEN }}
         run: pnpm exec semantic-release
