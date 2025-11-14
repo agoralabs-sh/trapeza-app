@@ -1,0 +1,12 @@
+{
+  "account": "{count, plural, =0{no accounts} =1{account} other{accounts}}",
+  "@account": {
+    "description": "In the context of a bank account that contains funds.",
+    "placeholders": {
+      "count": {
+        "format": "compact",
+        "type": "num"
+      }
+    }
+  }
+}

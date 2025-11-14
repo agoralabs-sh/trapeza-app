@@ -11,6 +11,12 @@ build-android-debug:
 build-ios:
 	flutter build ios --release
 
+clean:
+	fluter clean
+
+generate-translations:
+	flutter gen-l10n
+
 install:
 	flutter pub get
 
