@@ -7,9 +7,10 @@ environment:
   flutter: ">=3.38.0 <4.0.0" # flutter minimum version
 
 dependencies:
-  cupertino_icons: ^1.0.8
+  fast_immutable_collections: ^11.1.0
   flutter:
     sdk: flutter
+  flutter_feather_icons: ^2.0.0+1
   flutter_localizations:
     sdk: flutter
   intl: ^0.20.2

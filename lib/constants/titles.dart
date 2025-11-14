@@ -1,1 +1,1 @@
-const String appTitle = 'Trapeza';
+final String appTitle = 'Trapeza';

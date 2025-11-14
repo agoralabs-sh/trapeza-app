@@ -1,14 +1,14 @@
-extension StringExtensions on String {
+extension StringExtension on String {
   /// Capitalizes the first character of the string.
   ///
   /// ```dart
   /// print("hello world".capitalize()); // "Hello world"
   /// ```
   String capitalize() {
-    if (this.isEmpty) {
+    if (isEmpty) {
       return this;
     }
 
-    return "${this[0].toUpperCase()}${this.substring(1)}";
+    return "${this[0].toUpperCase()}${substring(1)}";
   }
 }

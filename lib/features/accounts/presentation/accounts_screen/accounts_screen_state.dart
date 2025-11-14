@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:trapeza_app/common_widgets/bottom_navigation_bar/bottom_navigation_bar_widget.dart';
 import 'package:trapeza_app/extensions/string_extension.dart';
 import 'package:trapeza_app/features/accounts/presentation/accounts_screen/accounts_screen_widget.dart';
 import 'package:trapeza_app/generated/l10n/app_localizations.dart';
@@ -9,28 +10,14 @@ class AccountScreenState extends State<AccountsScreenWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
         child: Column(
-          // Column is also a layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          //
-          // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
-          // action in the IDE, or press "p" in the console), to see the
-          // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(AppLocalizations.of(context)!.account(2).capitalize()),
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavigationBarWidget(),
     );
   }
 }

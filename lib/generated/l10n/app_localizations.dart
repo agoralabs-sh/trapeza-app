@@ -103,6 +103,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count, plural, =0{no accounts} =1{account} other{accounts}}'**
   String account(num count);
+
+  /// The crypto payment card.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{no cards} =1{card} other{cards}}'**
+  String card(num count);
+
+  /// Messages that notify the user.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{no notifications} =1{notification} other{notifications}}'**
+  String notification(num count);
 }
 
 class _AppLocalizationsDelegate
