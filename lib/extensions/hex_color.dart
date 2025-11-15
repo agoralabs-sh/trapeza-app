@@ -30,7 +30,7 @@ extension HexColor on Color {
       buffer.write(alpha);
     }
 
-    buffer.write("$red$green$blue");
+    buffer.write('$red$green$blue');
 
     return buffer.toString();
   }

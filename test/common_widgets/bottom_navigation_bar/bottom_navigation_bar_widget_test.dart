@@ -8,8 +8,8 @@ void main() {
   testWidgets('Contains the default items', (WidgetTester tester) async {
     await tester.pumpWidget(const Root());
 
-    expect(find.byKey(Key("${BottomNavigationItemWidget.elementName}--accounts")), findsOneWidget);
-    expect(find.byKey(Key("${BottomNavigationItemWidget.elementName}--cards")), findsOneWidget);
-    expect(find.byKey(Key("${BottomNavigationItemWidget.elementName}--notifications")), findsOneWidget);
+    expect(find.byKey(Key('${BottomNavigationItemWidget.elementName}--accounts')), findsOneWidget);
+    expect(find.byKey(Key('${BottomNavigationItemWidget.elementName}--cards')), findsOneWidget);
+    expect(find.byKey(Key('${BottomNavigationItemWidget.elementName}--notifications')), findsOneWidget);
   });
 }

@@ -26,6 +26,10 @@ clean:
 generate-translations:
 	flutter gen-l10n
 
+# Lints the Dart code.
+lint:
+	flutter analyze
+
 # Installs Flutter dependencies and initializes Husky's git hooks.
 install:
 	flutter pub get

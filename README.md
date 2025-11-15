@@ -266,6 +266,7 @@ Coming soon...
 
 | Command                              | Description                                                                                                                                                                                               |
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `flutter analyze`                    | Lints the Dart code.                                                                                                                                                                                      |
 | `flutter build <apk\|aab> --release` | Builds an Android APK/AAB to `build/app/outputs/bundle/release/app-release.<apk\|aab>`. NOTE: You will need a signing key, this can be acquired by following the steps in [4.4.1. Android](#441-android). |
 | `flutter gen-l10n`                   | Generates the localization code files to `lib/generated/l10n/` from the `.arb` files from `lib/l10n/`.                                                                                                    |
 | `flutter pub add <package_name>`     | Installs a new package and saves it to the `pubspec.yaml` file.                                                                                                                                           |

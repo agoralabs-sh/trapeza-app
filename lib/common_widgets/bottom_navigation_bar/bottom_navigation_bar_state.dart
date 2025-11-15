@@ -23,9 +23,9 @@ class BottomNavigationBarState extends State<BottomNavigationBarWidget> {
           BottomNavigationItemWidget(
             icon: FeatherIcons.list,
             isSelected: true,
-            key: Key("${BottomNavigationItemWidget.elementName}--accounts"),
+            key: Key('${BottomNavigationItemWidget.elementName}--accounts'),
             onTap: () {
-              print("clicked accounts");
+              debugPrint('clicked accounts');
             },
             label: AppLocalizations.of(context)!.account(2).capitalize(),
           ),
@@ -33,9 +33,9 @@ class BottomNavigationBarState extends State<BottomNavigationBarWidget> {
           BottomNavigationItemWidget(
             icon: FeatherIcons.creditCard,
             isSelected: false,
-            key: Key("${BottomNavigationItemWidget.elementName}--cards"),
+            key: Key('${BottomNavigationItemWidget.elementName}--cards'),
             onTap: () {
-              print("clicked cards");
+              debugPrint('clicked cards');
             },
             label: AppLocalizations.of(context)!.card(2).capitalize(),
           ),
@@ -43,9 +43,9 @@ class BottomNavigationBarState extends State<BottomNavigationBarWidget> {
           BottomNavigationItemWidget(
             icon: FeatherIcons.bell,
             isSelected: false,
-            key: Key("${BottomNavigationItemWidget.elementName}--notifications"),
+            key: Key('${BottomNavigationItemWidget.elementName}--notifications'),
             onTap: () {
-              print("clicked notifications");
+              debugPrint('clicked notifications');
             },
             label: AppLocalizations.of(context)!.notification(2).capitalize(),
           ),

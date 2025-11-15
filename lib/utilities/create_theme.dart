@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 /// Creates a theme from a [colorScheme].
+///
+/// See: https://material-foundation.github.io/material-theme-builder/
 ThemeData createTheme(BuildContext context, ColorScheme colorScheme) {
   TextTheme bodyTextTheme = GoogleFonts.getTextTheme('Nunito', Theme.of(context).textTheme);
   TextTheme textTheme = bodyTextTheme.copyWith(
