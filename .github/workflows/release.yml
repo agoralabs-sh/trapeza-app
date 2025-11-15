@@ -27,13 +27,12 @@ jobs:
         with:
           run_install: |
             - recursive: true
-            - args: ["--global", "semantic-release", "@semantic-release/{changelog,commit-analyzer,exec,git,github,release-notes-generator}"]
+            - args: ["--global", "semantic-release@25.0.2", "@semantic-release/changelog@6.0.3", "@semantic-release/exec@7.1.0", "@semantic-release/git@10.0.1"]
           version: '10'
       - name: "🔧 Setup Node"
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-          cache: 'pnpm'
       - name: "🔖 Release"
         env:
           # appears on the release commits
