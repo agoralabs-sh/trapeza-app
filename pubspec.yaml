@@ -12,6 +12,7 @@ dependencies:
   flutter_feather_icons: ^2.0.0+1
   flutter_localizations:
     sdk: flutter
+  google_fonts: ^6.3.2
   intl: ^0.20.2
 
 dev_dependencies:
@@ -22,11 +23,5 @@ dev_dependencies:
   husky: ^0.1.7
 
 flutter:
-  fonts:
-    - family: "Nunito"
-      fonts:
-        - asset: "assets/fonts/Nunito/Nunito-Regular.ttf"
-        - asset: "assets/fonts/Nunito/Nunito-Bold.ttf"
-          weight: 700
   generate: true
   uses-material-design: true
