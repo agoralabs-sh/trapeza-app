@@ -7,26 +7,26 @@
 </h4>
 
 <p align="center">
-  <a href="https://github.com/kibis-is/trapeza-mobile-app/releases/latest">
-    <img alt="GitHub Release" src="https://img.shields.io/github/v/release/kibis-is/trapeza-mobile-app?&logo=github">
+  <a href="https://github.com/kieranroneill/trapeza-app/releases/latest">
+    <img alt="GitHub Release" src="https://img.shields.io/github/v/release/kieranroneill/trapeza-app?&logo=github">
   </a>
-  <a href="https://github.com/kibis-is/trapeza-mobile-app/releases/latest">
-    <img alt="GitHub Release Date - Published At" src="https://img.shields.io/github/release-date/kibis-is/trapeza-mobile-app?logo=github">
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/kibis-is/trapeza-mobile-app/releases">
-    <img alt="GitHub Pre-release" src="https://img.shields.io/github/v/release/kibis-is/trapeza-mobile-app?include_prereleases&label=pre-release&logo=github">
-  </a>
-  <a href="https://github.com/kibis-is/trapeza-mobile-app/releases">
-    <img alt="GitHub Pre-release Date - Published At" src="https://img.shields.io/github/release-date-pre/kibis-is/trapeza-mobile-app?label=pre-release date&logo=github">
+  <a href="https://github.com/kieranroneill/trapeza-app/releases/latest">
+    <img alt="GitHub Release Date - Published At" src="https://img.shields.io/github/release-date/kieranroneill/trapeza-app?logo=github">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/kibis-is/trapeza-mobile-app/blob/main/LICENSE">
-    <img alt="GitHub License" src="https://img.shields.io/github/license/kibis-is/trapeza-mobile-app">
+  <a href="https://github.com/kieranroneill/trapeza-app/releases">
+    <img alt="GitHub Pre-release" src="https://img.shields.io/github/v/release/kieranroneill/trapeza-app?include_prereleases&label=pre-release&logo=github">
+  </a>
+  <a href="https://github.com/kieranroneill/trapeza-app/releases">
+    <img alt="GitHub Pre-release Date - Published At" src="https://img.shields.io/github/release-date-pre/kieranroneill/trapeza-app?label=pre-release date&logo=github">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/kieranroneill/trapeza-app/blob/main/LICENSE">
+    <img alt="GitHub License" src="https://img.shields.io/github/license/kieranroneill/trapeza-app">
   </a>
 </p>
 
@@ -302,7 +302,7 @@ keytool -genkeypair \
 
 ## 👏 7. How to contribute
 
-Please read the [**Contributing Guide**](https://github.com/kibis-is/trapeza-mobile-app/blob/main/CONTRIBUTING.md) to learn about the development process.
+Please read the [**Contributing Guide**](https://github.com/kieranroneill/trapeza-app/blob/main/CONTRIBUTING.md) to learn about the development process.
 
 <sup>[Back to top ^][table-of-contents]</sup>
 
@@ -318,6 +318,6 @@ Please refer to the [LICENSE][license] file.
 [fastlane]: https://docs.fastlane.tools/
 [flutter]: https://docs.flutter.dev/get-started/install
 [make]: https://www.gnu.org/software/make/
-[license]: https://github.com/kibis-is/trapeza-mobile-app/blob/main/LICENSE
+[license]: https://github.com/kieranroneill/trapeza-app/blob/main/LICENSE
 [ruby]: https://www.ruby-lang.org/en/documentation/installation/
 [table-of-contents]: #table-of-contents

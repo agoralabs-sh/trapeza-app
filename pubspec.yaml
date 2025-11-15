@@ -7,6 +7,8 @@ environment:
   flutter: ">=3.38.0 <4.0.0" # flutter minimum version
 
 dependencies:
+  cryptography: 2.7.0
+  cryptography_flutter: 2.3.2
   flutter:
     sdk: flutter
   flutter_feather_icons: ^2.0.0+1

@@ -5,7 +5,7 @@ import 'package:trapeza_app/common_widgets/bottom_navigation_bar/bottom_navigati
 import 'package:trapeza_app/root.dart';
 
 void main() {
-  testWidgets('Contains the default items', (WidgetTester tester) async {
+  testWidgets('should contain the default items', (WidgetTester tester) async {
     await tester.pumpWidget(const Root());
 
     expect(find.byKey(Key('${BottomNavigationItemWidget.elementName}--accounts')), findsOneWidget);
