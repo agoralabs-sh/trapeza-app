@@ -23,6 +23,7 @@ class BottomNavigationBarState extends State<BottomNavigationBarWidget> {
           BottomNavigationItemWidget(
             icon: FeatherIcons.list,
             isSelected: true,
+            key: Key("${BottomNavigationItemWidget.elementName}--accounts"),
             onTap: () {
               print("clicked accounts");
             },
@@ -32,6 +33,7 @@ class BottomNavigationBarState extends State<BottomNavigationBarWidget> {
           BottomNavigationItemWidget(
             icon: FeatherIcons.creditCard,
             isSelected: false,
+            key: Key("${BottomNavigationItemWidget.elementName}--cards"),
             onTap: () {
               print("clicked cards");
             },
@@ -41,6 +43,7 @@ class BottomNavigationBarState extends State<BottomNavigationBarWidget> {
           BottomNavigationItemWidget(
             icon: FeatherIcons.bell,
             isSelected: false,
+            key: Key("${BottomNavigationItemWidget.elementName}--notifications"),
             onTap: () {
               print("clicked notifications");
             },

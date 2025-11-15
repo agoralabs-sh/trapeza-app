@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 class BottomNavigationItemWidget extends StatelessWidget {
+  // static variables
+  static String elementName = 'bottom-navigation-bar-item';
+  // public variables
   final IconData icon;
   final bool isSelected;
   final String label;

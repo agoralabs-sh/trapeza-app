@@ -1,0 +1,14 @@
+Take full control of your money with Trapeza, the next-generation banking app powered by Monerium and Gnosis Pay. Effortlessly manage your digital wallet linked to a real IBAN, schedule and automate payments, and track your budget—all with complete transparency and security. Whether spending via stablecoin debit cards or managing fiat funds, stay in control of your finances without giving up ownership.
+
+Key features:
+
+* Connect your Monerium e-money wallet with an IBAN for seamless bank and crypto fund transfers
+* Use Gnosis Pay Visa debit cards for instant, self-custodial spending anywhere Visa is accepted
+* Intuitive budget tools for tracking spending, setting limits, and getting personalized financial insights
+* Schedule one-time or recurring payments with full user authorization and easy management
+* Robust security with on-chain ownership of your funds and clear, user-centric data controls
+* Real-time notifications to keep you alerted on payments and budget changes
+
+Enjoy a banking experience where you make the rules. No hidden fees, no opaque intermediaries—just transparent, programmable money for a smarter financial life.
+
+Download now to start managing your finances with freedom and confidence.
