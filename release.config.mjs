@@ -1,0 +1,41 @@
+/**
+ * @type {import('semantic-release').GlobalConfig}
+ */
+export default {
+  branches: [
+    'main',
+    {
+      name: 'beta',
+      prerelease: true,
+    },
+  ],
+  plugins: [
+    '@semantic-release/commit-analyzer',
+    '@semantic-release/release-notes-generator',
+    '@semantic-release/changelog',
+    [
+      '@semantic-release/exec',
+      {
+        prepareCmd:
+          'node ./scripts/update-version.mjs ${nextRelease.version} && node ./scripts/create-store-release-notes.mjs "${nextRelease.version}" "${nextRelease.notes}"',
+      },
+    ],
+    [
+      '@semantic-release/git',
+      {
+        assets: [
+          'android/fastlane/metadata/**',
+          'CHANGELOG.md',
+          'pubspec.yaml',
+        ],
+        message: 'chore(release): ${nextRelease.version}\n\n${nextRelease.notes}',
+      },
+    ],
+    [
+      '@semantic-release/github',
+      {
+        releasedLabels: ['🚀 released'],
+      },
+    ],
+  ],
+};

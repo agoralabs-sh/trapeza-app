@@ -1,0 +1,23 @@
+desc "Upload To Internal Track"
+lane :beta do
+    upload_to_play_store(
+        aab: File.expand_path('../..', __dir__) + '/build/app/outputs/bundle/release/app-release.aab',
+        json_key: File.expand_path('../..', __dir__) + '/play_store_credentials.json',
+        metadata_path: File.expand_path(__dir__) + '/metadata',
+        release_status: 'draft',
+        skip_upload_changelogs: true, # TODO: remove after version release
+        track: 'internal'
+    )
+end
+
+desc "Upload To Production Track"
+lane :production do
+    upload_to_play_store(
+        aab: File.expand_path('../..', __dir__) + '/build/app/outputs/bundle/release/app-release.aab',
+        json_key: File.expand_path('../..', __dir__) + '/play_store_credentials.json',
+        metadata_path: File.expand_path(__dir__) + '/metadata',
+        release_status: 'draft',
+        skip_upload_changelogs: true, # TODO: remove after version release
+        track: 'beta' # TODO: change to 'production' track when launching - currently releases to "Open Testing"
+    )
+end

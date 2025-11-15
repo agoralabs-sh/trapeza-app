@@ -1,0 +1,323 @@
+<h1 align="center">
+  Trapeza App
+</h1>
+
+<h4 align="center">
+  You make the rules.
+</h4>
+
+<p align="center">
+  <a href="https://github.com/kibis-is/trapeza-mobile-app/releases/latest">
+    <img alt="GitHub Release" src="https://img.shields.io/github/v/release/kibis-is/trapeza-mobile-app?&logo=github">
+  </a>
+  <a href="https://github.com/kibis-is/trapeza-mobile-app/releases/latest">
+    <img alt="GitHub Release Date - Published At" src="https://img.shields.io/github/release-date/kibis-is/trapeza-mobile-app?logo=github">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/kibis-is/trapeza-mobile-app/releases">
+    <img alt="GitHub Pre-release" src="https://img.shields.io/github/v/release/kibis-is/trapeza-mobile-app?include_prereleases&label=pre-release&logo=github">
+  </a>
+  <a href="https://github.com/kibis-is/trapeza-mobile-app/releases">
+    <img alt="GitHub Pre-release Date - Published At" src="https://img.shields.io/github/release-date-pre/kibis-is/trapeza-mobile-app?label=pre-release date&logo=github">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/kibis-is/trapeza-mobile-app/blob/main/LICENSE">
+    <img alt="GitHub License" src="https://img.shields.io/github/license/kibis-is/trapeza-mobile-app">
+  </a>
+</p>
+
+<p align="center">
+  The Trapeza app is built using Flutter.
+</p>
+
+### Table of contents
+
+* [1. Overview](#-1-overview)
+* [2. Usage](#-2-usage)
+* [3. Development](#-3-development)
+  - [3.1. Requirements](#31-requirements)
+  - [3.2. Install dependencies](#32-install-dependencies)
+  - [3.3. Run](#33-run)
+  - [3.4. Launcher icons](#34-launcher-icons)
+* [4. Building](#-4-building)
+  - [4.1. Requirements](#41-requirements)
+  - [4.2. Create a personal Doppler config](#42-create-a-personal-doppler-config)
+  - [4.3. Setup Doppler CLI](#43-setup-doppler-cli)
+  - [4.4. Build](#44-build)
+    - [4.4.1. Android](#441-android)
+    - [4.4.2. iOS](#442-ios)
+* [5. Publishing](#-5-publishing)
+    - [5.1. Overview](#51-overview)
+    - [5.2. Requirements](#52-requirements)
+    - [5.3. Setup Doppler](#53-setup-doppler)
+    - [5.4. Publish via Fastlane](#54-publish-via-fastlane)
+      - [5.4.1. Android](#541-android)
+      - [5.4.2. iOS](#542-ios)
+* [6. Appendix](#-6-appendix)
+  - [6.1. Useful commands](#61-useful-commands)
+  - [6.2. Create an apk signing keystore](#62-create-an-apk-signing-keystore)
+* [7. How to contribute](#-7-how-to-contribute)
+* [8. License](#-8-license)
+
+## 🗂️ 1. Overview
+
+Trapeza is a Flutter project and target Android and iOS
+
+## 🪄 2. Usage
+
+Coming soon...
+
+<sup>[Back to top ^][table-of-contents]</sup>
+
+## 🛠 3. Development
+
+### 3.1. Requirements
+
+* [Flutter SDK v3.22.3][flutter]
+* [Make (optional)](https://www.gnu.org/software/make/)
+
+<sup>[Back to top ^][table-of-contents]</sup>
+
+### 3.2. Install Dependencies
+
+Simply run:
+```bash
+$ flutter pub get
+```
+
+> ⚠️ **NOTE:** This will install the required dependencies and generate the development keys that can be used for signing the development version of the app.
+
+Alternatively, if Make is installed, simply run:
+
+```shell
+make install
+```
+
+<sup>[Back to top ^][table-of-contents]</sup>
+
+### 3.3. Run
+
+* To run simply use:
+```bash
+$ flutter run
+```
+
+<sup>[Back to top ^][table-of-contents]</sup>
+
+### 3.4. Launcher icons
+
+The icons are configured using the [`flutter_launcher_icons`](https://pub.dev/packages/flutter_launcher_icons) package. The configuration sits in the `pubspec.yaml` file.
+
+tl;dr, you can create new icons by running the command:
+```shell
+dart run flutter_launcher_icons
+```
+
+> **NOTE:** This will create the icons for all platforms except Android, see below for details on Android.
+
+<sup>[Back to top ^][table-of-contents]</sup>
+
+##### 3.4.1. Android
+
+The Android launcher icons are created using Android Studio's Image Asset Studio. You can follow [this](https://developer.android.com/studio/write/create-app-icons#access) on how to create adaptive icons.
+
+> **NOTE:** If you are running Android Studio from the root, you will need to reopen Android Studio from the `andriod/` directory in order to access the "Andorid View".
+
+For more information regarding Adaptive Icons, see [here](https://developer.android.com/develop/ui/views/launch/icon_design_adaptive).
+
+<sup>[Back to top ^][table-of-contents]</sup>
+
+## 📦 4. Building
+
+### 4.1. Requirements
+
+* [Doppler CLI][doppler]
+* [Flutter SDK v3.22.3][flutter]
+
+<sup>[Back to top ^][table-of-contents]</sup>
+
+### 4.2. Create a personal Doppler config
+
+To start using your own Doppler config, go to the project on [Doppler](https://dashboard.doppler.com/workplace/ae8c01548486ba93b8fd/projects/mobile-app) and press the "+" to create a new personal branch config in the "Development" config
+
+> ⚠️ **NOTE:** Use your name in lowercase with underscores instead of spaces (snake_case).
+
+<sup>[Back to top ^][table-of-contents]</sup>
+
+### 4.3. Setup Doppler CLI
+
+Follow the instructions [here](https://docs.doppler.com/docs/install-cli#local-development) to:
+
+* login to Doppler, and;
+* setup Doppler to use the `mobile-app` project with your personal config.
+
+> ⚠️ **NOTE:** When naming your token, it is recommended you use: "<your_name>-<device_name>".
+
+<sup>[Back to top ^][table-of-contents]</sup>
+
+### 4.4. Build
+
+#### 4.4.1. Android
+
+1. Create the signing keys with a wrapped Doppler command:
+```shell
+doppler run -- ./scripts/create_android_signing_keys.sh
+```
+
+> ⚠️ **NOTE:** The wrapped Doppler command will fetch the secrets for the active config and inject them into the command shell.
+
+2. Build a release:
+```shell
+flutter build <apk|aab> --release
+```
+
+3. The APK or AAB will use the signing keys from step 2 and add the file.
+   1. APK builds will be in: `build/app/outputs/apk/release/app-release.apk`
+   2. AAB builds will be in: `build/app/outputs/bundle/release/app-release.aab`
+
+> 🚨 **WARNING:** The `dev` Doppler configs contain "dummy" upload signing keys and CANNOT be used to upload to the Play Store.
+
+<sup>[Back to top ^][table-of-contents]</sup>
+
+#### 4.4.2. iOS
+
+Coming soon...
+
+<sup>[Back to top ^][table-of-contents]</sup>
+
+## 🚀 5. Publishing
+
+### 5.1. Overview
+
+Publishing is automated by the CD, but it is possible to publish locally using the keys stored on [Doppler](https://www.doppler.com/) and [Fastlane][fastlane].
+
+<sup>[Back to top ^][table-of-contents]</sup>
+
+### 5.2. Requirements
+
+* [Doppler CLI][doppler]
+* [Bundler (via `gem`)][bundler]
+* [Fastlane (via `gem`)][fastlane]
+* [Ruby][ruby]
+
+<sup>[Back to top ^][table-of-contents]</sup>
+
+### 5.3. Setup Doppler
+
+Repeat the steps in [4.2. Create A Personal Doppler Config](#42-create-a-personal-doppler-config) and [4.3. Setup Doppler CLI](#43-setup-doppler-cli) to setup Doppler.
+
+<sup>[Back to top ^][table-of-contents]</sup>
+
+### 5.3. Install Bundler Dependencies
+
+[Fastlane][fastlane] is installed and executed via [Bundler][bundler]. This repo contains a `Gemfile` to handle the Fastlane dependencies needed, so, with Bundler installed, you can simply run:
+```shell
+bundle install
+```
+
+<sup>[Back to top ^][table-of-contents]</sup>
+
+### 5.4. Publish via Fastlane
+
+#### 5.4.1 Android
+
+1. Assuming Doppler setup has been setup, you will need fetch the production upload signing keys. This can be done using the command:
+```shell
+doppler run --config=prd -- ./scripts/create_android_signing_keys.sh
+```
+
+> ⚠️ **NOTE:** This is the same command as [4.4.1. Android](#441-android), but the config has been set to the "production".
+
+2. Build a new version of the app:
+```shell
+flutter build aab --release
+```
+
+3. Get the Google Cloud Service credentials that will allow you to upload an app bundle to the Play Store by using the following command:
+```shell
+./scripts/create_play_store_credentials.sh
+```
+
+> ⚠️ **NOTE:** The following script will require the `$GOOGLE_CLOUD_SERVICE_ACCOUNT_KEY` to be set with the credentials.
+
+4. Use Fastlane to upload the release to the Google Play Store using the following commands:
+```shell
+cd ./android
+bundle exec fastlane <lane>
+```
+
+> ⚠️ **NOTE:** The `lane` can either be `beta` or `production`. With `beta` uploading to the Internal Testing track and `production` uploading to the live version of the app.
+
+<sup>[Back to top ^][table-of-contents]</sup>
+
+#### 5.4.2 iOS
+
+Coming soon...
+
+<sup>[Back to top ^][table-of-contents]</sup>
+
+## 📑 6. Appendix
+
+### 6.1. Useful Commands
+
+| Command                              | Description                                                                                                                                                                                               |
+|--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `flutter analyze`                    | Lints the Dart code.                                                                                                                                                                                      |
+| `flutter build <apk\|aab> --release` | Builds an Android APK/AAB to `build/app/outputs/bundle/release/app-release.<apk\|aab>`. NOTE: You will need a signing key, this can be acquired by following the steps in [4.4.1. Android](#441-android). |
+| `flutter gen-l10n`                   | Generates the localization code files to `lib/generated/l10n/` from the `.arb` files from `lib/l10n/`.                                                                                                    |
+| `flutter pub add <package_name>`     | Installs a new package and saves it to the `pubspec.yaml` file.                                                                                                                                           |
+| `flutter run`                        | Runs the app locally.                                                                                                                                                                                     |
+| `bundle exec fastlane <lane>`        | Uploads a mobile artifact to the Play Store/AppStore based on the lane, where `lane` is either `beta` or `production`.                                                                                    |
+| `dart run flutter_launcher_icons`    | Creates the launcher and store icons for all the apps (Android is excluded).                                                                                                                              |
+| `dart run husky install`             | Initializes `husky`'s git hooks.                                                                                                                                                                          |
+
+See the [Flutter CLI](https://docs.flutter.dev/reference/flutter-cli#flutter-commands) reference for a full list of available commands.
+
+<sup>[Back to top ^][table-of-contents]</sup>
+
+### 6.2. Create an apk signing keystore
+
+The command below can be used to generate a keystore used for app signing:
+
+```shell
+keytool -genkeypair \
+  -v \
+  -validity 10000 \
+  -keystore signing_keystore.jks \
+  -keyalg RSA \
+  -keysize 2048 \
+  -keypass <key_password> \
+  -alias <key_alias> \
+  -storepass <keystore_password> \
+  -storetype JKS
+```
+
+> 💡 **TIP:** You can encode the keystore in base64 using: `base64 -w 0 signing_keystore.jks > signing_keystore-base64.txt`.
+
+<sup>[Back to top ^][table-of-contents]</sup>
+
+## 👏 7. How to contribute
+
+Please read the [**Contributing Guide**](https://github.com/kibis-is/trapeza-mobile-app/blob/main/CONTRIBUTING.md) to learn about the development process.
+
+<sup>[Back to top ^][table-of-contents]</sup>
+
+## 📄 8. License
+
+Please refer to the [LICENSE][license] file.
+
+<sup>[Back to top ^][table-of-contents]</sup>
+
+<!-- links -->
+[bundler]: https://bundler.io/
+[doppler]: https://docs.doppler.com/docs/install-cli
+[fastlane]: https://docs.fastlane.tools/
+[flutter]: https://docs.flutter.dev/get-started/install
+[make]: https://www.gnu.org/software/make/
+[license]: https://github.com/kibis-is/trapeza-mobile-app/blob/main/LICENSE
+[ruby]: https://www.ruby-lang.org/en/documentation/installation/
+[table-of-contents]: #table-of-contents

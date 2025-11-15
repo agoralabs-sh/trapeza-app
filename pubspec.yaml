@@ -1,0 +1,27 @@
+name: trapeza_app
+description: "Trapeza - you make the rules."
+publish_to: "none"
+version: 1.0.0+1
+environment:
+  sdk: ">=3.9.0 <4.0.0" # dart minimum version
+  flutter: ">=3.38.0 <4.0.0" # flutter minimum version
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_feather_icons: ^2.0.0+1
+  flutter_localizations:
+    sdk: flutter
+  google_fonts: ^6.3.2
+  intl: ^0.20.2
+
+dev_dependencies:
+  commitlint_cli: ^0.8.1
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+  husky: ^0.1.7
+
+flutter:
+  generate: true
+  uses-material-design: true

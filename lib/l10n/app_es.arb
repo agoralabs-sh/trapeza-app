@@ -1,0 +1,3 @@
+{
+  "account": "{count, plural, =0{sin cuentas} =1{cuenta} other{cuentas}}"
+}
