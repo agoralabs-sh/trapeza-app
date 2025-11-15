@@ -25,9 +25,9 @@ jobs:
       - name: "🔧 Setup pnpm"
         uses: pnpm/action-setup@v4
         with:
-          run_install:
+          run_install: |
             - recursive: true
-            - args: ["--strict-peer-dependencies", "--global", "semantic-release", "@semantic-release/{changelog,commit-analyzer,exec,git,github,release-notes-generator}"]
+            - args: ["--global", "semantic-release", "@semantic-release/{changelog,commit-analyzer,exec,git,github,release-notes-generator}"]
           version: '10'
       - name: "🔧 Setup Node"
         uses: actions/setup-node@v4
