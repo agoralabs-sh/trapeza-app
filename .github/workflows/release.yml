@@ -42,4 +42,4 @@ jobs:
           GIT_COMMITTER_EMAIL: tech@agoralabs.sh
           # used to push the release commit and create the tags
           GITHUB_TOKEN: ${{ secrets.WRITE_REPOS_TOKEN }}
-        run: pnpm exec semantic-release
+        run: semantic-release
